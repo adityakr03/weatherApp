@@ -72,6 +72,7 @@ input {
     max-width: 85%; /* Limit the width of the card to 90% of viewport width */
     min-width: 250px;
     align-items: center;
+    overflow-y: scroll;
 }
 
 
