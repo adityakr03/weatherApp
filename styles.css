@@ -1,0 +1,121 @@
+body{
+    font-family: "Exo 2";
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    /* background-image: url("https://source.unsplash.com/1920x1080/?nature");
+    background-size: cover;
+    background-attachment: fixed; */
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-decoration: underline dashed;
+}
+
+p{
+    font-size: 1.5rem;
+    margin: 5px 0;
+    color: black;
+}
+
+/* Button Styles */
+button {
+    margin: 15px 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    border: none; /* Transparent border */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 20px; /* Adjust the border radius */
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
+}
+
+button:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+    transform: scale(1.05);
+}
+
+/* Input Styles */
+input {
+    margin: 15px 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    border: 2px solid transparent; /* Transparent border */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 20px; /* Adjust the border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    background-clip: padding-box; /* Apply gradient only to padding box */
+}
+
+.card {
+    margin: 5%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    color: #fff;
+    padding: 2rem;
+    font-size: 1em;
+    border-radius: 20px; /* Adjust the border radius */
+    box-shadow: 0 5px 10px rgb(136, 128, 128); /* Shadow effect */
+    background-clip: padding-box; /* Apply gradient only to padding box */
+    display: flex;
+    flex-direction: column;
+    max-width: 85%; /* Limit the width of the card to 90% of viewport width */
+    min-width: 250px;
+    align-items: center;
+}
+
+
+.weatherForm{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.cityInput{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+    color: #fff;
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
+}
+
+.cityDisplay, .tempDisplay{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.humidityDisplay{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.descDisplay{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.weatherEmoji{
+    margin: 0;
+    font-size: 7.5rem;
+}
+
+.errorDisplay_{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+}
