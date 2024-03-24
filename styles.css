@@ -10,6 +10,7 @@ body{
     background-size: cover;
     background-attachment: fixed; */
     height: 100vh; /* Ensure the body takes up the full viewport height */
+    overflow: hidden;
 }
 
 h1 {

@@ -1,20 +1,12 @@
-// // Background Color change function
-// function generateGradientColor() {
-//     // Generate random RGB color values
-//     let r1 = Math.floor(Math.random() * 256);
-//     let g1 = Math.floor(Math.random() * 256);
-//     let b1 = Math.floor(Math.random() * 256);
-//     let r2 = Math.floor(Math.random() * 256);
-//     let g2 = Math.floor(Math.random() * 256);
-//     let b2 = Math.floor(Math.random() * 256);
-
-//     // Construct CSS gradient string
-//     let gradientColor = `linear-gradient(to right, rgb(${r1}, ${g1}, ${b1}), rgb(${r2}, ${g2}, ${b2}))`;
-
-//     // Set body background to gradient color
-//     document.body.style.background = gradientColor;
-// }
-// generateGradientColor();
+function changeGradient(event) {
+    const colors = [
+        'rgba(0, 0, 0, 1)',      // Black
+        'rgba(64, 64, 64, 1)'    // Dark grey
+    ];
+    const angle = Math.atan2(event.clientY - window.innerHeight / 2, event.clientX - window.innerWidth / 2) * (180 / Math.PI) + 90;
+    document.body.style.background = `linear-gradient(${angle}deg, ${colors[0]}, ${colors[1]})`;
+}
+window.addEventListener('mousemove', changeGradient);
 
 const weatherForm = document.querySelector(".weatherForm");
 const cityInput = document.querySelector(".cityInput");
