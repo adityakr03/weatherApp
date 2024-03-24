@@ -119,3 +119,10 @@ input {
     font-weight: bold;
     color: rgba(0, 0, 0, 0.7);
 }
+
+/* Add this CSS to make text non-selectable */
+.weatherForm,
+.cityInput,
+.card {
+    user-select: none;
+}
