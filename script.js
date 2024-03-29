@@ -1,24 +1,24 @@
-function changeGradient(event) {
-    const colors = [
-        'rgba(0, 0, 0, 1)',      // Black
-        'rgba(64, 64, 64, 1)'    // Dark grey
-    ];
-    if (event.type === 'mousemove') {
-        // Calculate angle based on mouse position
-        angle = Math.atan2(event.clientY - window.innerHeight / 2, event.clientX - window.innerWidth / 2);
-        angle = angle * (180 / Math.PI) + 90; // Convert radians to degrees
-    } else if (event.type === 'touchmove') {
-        // Calculate angle based on touch position
-        const touch = event.touches[0];
-        angle = Math.atan2(touch.clientY - window.innerHeight / 2, touch.clientX - window.innerWidth / 2);
-        angle = angle * (180 / Math.PI) + 90; // Convert radians to degrees
-    }
-    document.body.style.background = `linear-gradient(${angle}deg, ${colors[0]}, ${colors[1]})`;
-}
+// function changeGradient(event) {
+//     const colors = [
+//         'rgba(0, 0, 0, 1)',      // Black
+//         'rgba(64, 64, 64, 1)'    // Dark grey
+//     ];
+//     if (event.type === 'mousemove') {
+//         // Calculate angle based on mouse position
+//         angle = Math.atan2(event.clientY - window.innerHeight / 2, event.clientX - window.innerWidth / 2);
+//         angle = angle * (180 / Math.PI) + 90; // Convert radians to degrees
+//     } else if (event.type === 'touchmove') {
+//         // Calculate angle based on touch position
+//         const touch = event.touches[0];
+//         angle = Math.atan2(touch.clientY - window.innerHeight / 2, touch.clientX - window.innerWidth / 2);
+//         angle = angle * (180 / Math.PI) + 90; // Convert radians to degrees
+//     }
+//     document.body.style.background = `linear-gradient(${angle}deg, ${colors[0]}, ${colors[1]})`;
+// }
 
 // Event listeners for mouse movement and touch events
-document.addEventListener('mousemove', changeGradient);
-document.addEventListener('touchmove', changeGradient);
+// document.addEventListener('mousemove', changeGradient);
+// document.addEventListener('touchmove', changeGradient);
 
 const weatherForm = document.querySelector(".weatherForm");
 const cityInput = document.querySelector(".cityInput");
@@ -73,7 +73,7 @@ function displayWeatherInfo(data){
             const weatherEmoji = document.createElement("p");
 
             cityDisplay.textContent = city;
-            tempDisplay.textContent = `${(temp - 273.15).toFixed(1)}°C`;
+            tempDisplay.innerHTML = `${(temp - 273.15).toFixed(1)}°<span class="red">C</span>`;
             humidityDisplay.textContent = `Humidity: ${humidity}%`;
             descDisplay.textContent = description;
             weatherEmoji.textContent = getWeatherEmoji(id);
