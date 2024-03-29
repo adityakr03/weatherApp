@@ -18,6 +18,9 @@ body{
         background-image: none; /* Remove background image on mobile */
         background-color: #000; /* Set solid black background color */
     }
+    .card{
+        overflow-y: scroll;
+    }
 }
 
 h1 {
@@ -83,7 +86,7 @@ input {
     max-width: 85%; /* Limit the width of the card to 90% of viewport width */
     min-width: 250px;
     align-items: center;
-    overflow-y: scroll;
+    
     transition: background-color 0.5s, transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Use cubic-bezier for anticipate overshoot animation */
 }
 
