@@ -92,14 +92,14 @@ function getWeatherEmoji(weatherId) {
 }
 
 function updateBackgroundImage(weatherId) {
-    let backgroundImageUrl = "";
+    let backgroundImageUrl = "wall.jpg";
 
     switch(true) {
         case(weatherId >= 200 && weatherId < 300):
-            backgroundImageUrl = "url('rainy.jpg')"; // Rainy weather
+            backgroundImageUrl = "url('rainy.jpg')"; // Rainy GIF from Tenor
             break;
         case(weatherId >= 300 && weatherId < 400):
-            backgroundImageUrl = "url('stormy.jpg')"; // Stormy weather
+            backgroundImageUrl = "url('stormy.jpg')"; // Stormy weather (use your image here)
             break;
         case(weatherId >= 500 && weatherId < 600):
             backgroundImageUrl = "url('snowy.jpg')"; // Snowy weather
@@ -117,7 +117,7 @@ function updateBackgroundImage(weatherId) {
             backgroundImageUrl = "url('cloudy.jpg')"; // Cloudy weather
             break;
         default:
-            backgroundImageUrl = "url('default.jpg')"; // Default background
+            backgroundImageUrl = "url('wall.jpg')"; // Default background
             break;
     }
 
