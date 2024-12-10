@@ -5,7 +5,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(wall.jpg);
+    background-image: url(./assets/wall.jpg);
     height: 100vh; /* Ensure the body takes up the full viewport height */
     overflow: hidden;
     background-size: cover;

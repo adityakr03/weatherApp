@@ -92,32 +92,32 @@ function getWeatherEmoji(weatherId) {
 }
 
 function updateBackgroundImage(weatherId) {
-    let backgroundImageUrl = "wall.jpg";
+    let backgroundImageUrl = "";
 
     switch(true) {
         case(weatherId >= 200 && weatherId < 300):
-            backgroundImageUrl = "url('rainy.jpg')"; // Rainy GIF from Tenor
+            backgroundImageUrl = "url('./assets/rainy.jpg')"; // Rainy GIF from Tenor
             break;
         case(weatherId >= 300 && weatherId < 400):
-            backgroundImageUrl = "url('stormy.jpg')"; // Stormy weather (use your image here)
+            backgroundImageUrl = "url('./assets/stormy.jpg')"; // Stormy weather (use your image here)
             break;
         case(weatherId >= 500 && weatherId < 600):
-            backgroundImageUrl = "url('snowy.jpg')"; // Snowy weather
+            backgroundImageUrl = "url('./assets/snowy.jpg')"; // Snowy weather
             break;
         case(weatherId >= 600 && weatherId < 700):
-            backgroundImageUrl = "url('snow.jpg')"; // Snowy weather
+            backgroundImageUrl = "url('./assets/snow.jpg')"; // Snowy weather
             break;
         case(weatherId >= 700 && weatherId < 800):
-            backgroundImageUrl = "url('foggy.jpg')"; // Foggy weather
+            backgroundImageUrl = "url('./assets/foggy.jpg')"; // Foggy weather
             break;
         case(weatherId === 800):
-            backgroundImageUrl = "url('sunny.jpg')"; // Clear weather
+            backgroundImageUrl = "url('./assets/sunny.jpg')"; // Clear weather
             break;
         case(weatherId >= 801 && weatherId < 810):
-            backgroundImageUrl = "url('cloudy.jpg')"; // Cloudy weather
+            backgroundImageUrl = "url('./assets/cloudy.jpg')"; // Cloudy weather
             break;
         default:
-            backgroundImageUrl = "url('wall.jpg')"; // Default background
+            backgroundImageUrl = "url('./assets/wall.jpg')"; // Default background
             break;
     }
 
