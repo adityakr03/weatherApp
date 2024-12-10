@@ -1,5 +1,3 @@
----
-
 # WeatherApp 🌤️
 
 **WeatherApp** is a simple and responsive web application that allows users to check the current weather conditions in any city. It utilizes the **OpenWeather API** to fetch real-time weather data, providing accurate information such as temperature, humidity, weather conditions, and more. This app offers a clean, easy-to-use interface for a seamless experience.
