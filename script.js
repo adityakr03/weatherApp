@@ -96,7 +96,7 @@ function updateBackgroundImage(weatherId) {
 
     switch(true) {
         case(weatherId >= 200 && weatherId < 300):
-            backgroundImageUrl = "url('./assets/rainy.jpg')"; // Rainy GIF from Tenor
+            backgroundImageUrl = "url('./assets/rainy.jpg')"; // Rainy weather
             break;
         case(weatherId >= 300 && weatherId < 400):
             backgroundImageUrl = "url('./assets/stormy.jpg')"; // Stormy weather (use your image here)
